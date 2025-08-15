@@ -75,6 +75,3 @@ nextBtn.addEventListener("click", () => {
   current = (current + 1) % testimonials.length;
   showTestimonial(current);
 });
-
-// ________________faq ________________
-const faq1 = document.getElementById("faq-1");

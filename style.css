@@ -8,6 +8,7 @@
   /* Color Palette */
   --color-bg: #161514;
   --color-bg-dark: #0b0b0b;
+  --color-bg-dark-secondary: #242424;
   --color-primary: #ffffff;
   --color-secondary: #aaaaaa;
   --color-accent: #1e1e1e;
@@ -17,6 +18,7 @@
   --color-purple: #254cf8;
   --color-blue: #4e6be9;
   --color-aesthetic-red: #f16073;
+  --color-aesthetic-blue: #60c1e3;
 
   /* Button */
   --btn-bg: var(--color-accent);
@@ -403,6 +405,7 @@ button {
   border: 1px solid #fff;
   color: #fff;
   border-radius: 12px;
+  height: max-content;
 }
 .outline-button:hover {
   background: #fff;
@@ -828,7 +831,7 @@ button {
   padding: 20px;
   margin-top: 90px;
   position: relative;
-  transition: 0.1s ease;
+  transition: 0.5s ease;
 }
 
 .card:hover {
@@ -1300,7 +1303,7 @@ button {
   /* align-items: center; */
   width: 100%;
   background: #fff;
-  height: screen;
+  height: 100vh;
 }
 
 @media (max-width: 1024px) {
@@ -1390,13 +1393,15 @@ button {
   background-color: blue;
 } */
 .img-wrapper {
-  /* height: 100%; */
-  width: 60%;
+  height: 100%;
+  width: 80%;
   overflow: hidden;
+  background-color: yellow;
   border-radius: 40px;
 }
 @media (max-width: 1024px) {
   .img-wrapper {
+    height: 100%;
     width: 100%;
   }
 }
@@ -1404,48 +1409,149 @@ button {
 .faq-1 {
   padding-top: 40px;
   padding-left: 40px;
-  /* padding-bottom: 0; */
   background-color: var(--color-aesthetic-red);
 }
 .faq-2 {
   padding-top: 40px;
   padding-left: 40px;
-  /* padding-bottom: 0; */
   background-color: #8de4ff;
 }
 .faq-3 {
   padding-top: 40px;
   padding-left: 40px;
-  /* padding-bottom: 0; */
   background-color: #f6af65;
 }
 .faq-4 {
   padding-top: 40px;
   padding-left: 40px;
-  /* padding-bottom: 0; */
   background-color: #00c2d1;
 }
 
-/* #8DE4FF */
-/* #00C2D1 */
-/* #F6AF65 */
+.card-padding {
+  padding-top: 70px;
+  padding-left: 70px;
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .card-padding {
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-padding {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+}
+
 .image-card {
-  /* height: 80%; */
   display: none;
 }
 
 .image-card > img {
   height: 100%;
-  object-fit: contain;
-  border-top-left-radius: 30px;
+  display: block;
+  object-fit: cover;
+  border-top-left-radius: 40px;
   width: 100%;
-  margin: 0;
 }
 
 .image-card.active-image {
   display: block;
   overflow: hidden;
-  margin: 0;
+  height: 100%;
+}
+
+/* ========== AI INTERVIEWER SECTION ========== */
+.ai-interviewer-section {
+  background: var(--color-bg);
+}
+
+.section-tag-p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-aesthetic-red);
+}
+
+.tag-h {
+  font-family: var(--font-heading);
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 130%;
+  width: 90%;
+  text-transform: uppercase;
+}
+
+.main-para {
+  color: #cacaca;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--font-heading);
+  width: 70%;
+}
+
+.para-wrap {
+  margin-top: 15px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.outer-wrap {
+  background-color: var(--color-bg-dark-secondary);
+  border-radius: 40px;
+  padding: 10px;
+  height: 90vh;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.inner-wrap {
+  background-color: var(--color-aesthetic-red);
+  border-radius: 35px;
+  padding: 50px 70px 0 70px;
+  height: 100%;
+  width: 100%;
+}
+
+.inner-wrap-2 {
+  background-color: var(--color-aesthetic-blue);
+  border-radius: 35px;
+  padding: 50px 70px 0 70px;
+  height: 100%;
+  width: 100%;
+}
+
+.image-wrap {
+  border-radius: 30px 30px 0 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  overflow: hidden;
+}
+
+.image-wrap > img {
+  height: 100%;
+  width: inherit;
+}
+
+/* ========== IMPACT SECTION ========== */
+
+.impact-section {
+  background-color: #fff;
+  height: 100vh;
+}
+
+.impact-h {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 60px;
+  color: var(--color-bg-dark);
 }
 
 /* ========== FOOTER ========== */
