@@ -247,11 +247,22 @@ ul {
   align-items: center;
   padding: 1rem;
 }
+@media (min-width: 1439px) {
+  .navbar {
+    padding: 1rem 3rem;
+  }
+}
 
 .nav-links {
   display: flex;
   gap: 2rem;
   transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 1200px) {
+  .nav-links {
+    margin-left: 200px;
+  }
 }
 .menu-toggle {
   display: none;
